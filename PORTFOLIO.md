@@ -12,7 +12,7 @@
 | # | Project | Status | Live URL | Stack | Last Updated |
 |---|---|---|---|---|---|
 | 1 | ROI Calculator | ✅ Complete | [Live](https://realnov8-roi-calculator-qhld.vercel.app/) | React 19 · Vite 8 | — |
-| 2 | Property Listing App | 🔄 In Progress | — | React 19 · Vite 8 | — |
+|| 2 | Property Listing App | ✅ Complete | [Live](https://project-2-property-listing-797h8ooiz-emwoiwo-9649s-projects.vercel.app/) | React 19 · Vite 8 | March 2026 |
 | 3 | Real Estate Chatbot | ⬜ Not Started | — | React 19 · Vite 8 | — |
 | 4 | n8n Automation System | ⬜ Not Started | — | n8n · Webhooks | — |
 | 5 | Smart City Dashboard | ⬜ Not Started | — | React 19 · Recharts | — |
