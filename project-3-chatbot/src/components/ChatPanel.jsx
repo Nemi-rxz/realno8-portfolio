@@ -69,9 +69,12 @@ export default function ChatPanel({ onFilter }) {
 
       // Auto-filter listings based on city mentions
       const cities = ["Lagos", "Abuja", "Port Harcourt", "Enugu"];
-      const mentioned = cities.find((c) => input.toLowerCase().includes(c.toLowerCase()));
-      if (mentioned) onFilter(mentioned);
-      else if (input.toLowerCase().includes("all") || input.toLowerCase().includes("every")) onFilter(null);
+const mentioned = cities.find((c) => 
+  input.toLowerCase().includes(c.toLowerCase()) || 
+  reply.toLowerCase().includes(c.toLowerCase())
+);
+if (mentioned) onFilter(mentioned);
+else if (input.toLowerCase().includes("all") || input.toLowerCase().includes("every") || input.toLowerCase().includes("best") || input.toLowerCase().includes("show")) onFilter(null);
     } catch {
       setMessages((prev) => [...prev, { role: "assistant", content: "⚠️ Connection error. Please check your internet and try again." }]);
     }
