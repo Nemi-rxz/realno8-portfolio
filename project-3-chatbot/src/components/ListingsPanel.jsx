@@ -1,23 +1,29 @@
 import { useState } from "react";
 import listings from "../data/listings";
 import { fmtShort, pct, scoreColor } from "../utils/format";
+import { summarizeFilters } from "../utils/chatFilters";
+import { filterListings } from "../utils/listingFilters";
 
-export default function ListingsPanel({ cityFilter }) {
+export default function ListingsPanel({ filters, onClearFilters }) {
   const [selected, setSelected] = useState(null);
 
-  const filtered = cityFilter
-    ? listings.filter((l) => l.city.toLowerCase() === cityFilter.toLowerCase())
-    : listings;
+  const filtered = filterListings(listings, filters);
+  const summary = summarizeFilters(filters);
+  const subBase = `${filtered.length} listing${filtered.length !== 1 ? "s" : ""}`;
+  const subDetail =
+    summary.length > 0 ? `${subBase} · ${summary.join(" · ")}` : `${subBase} across Nigeria`;
 
   return (
     <div className="listings-panel">
       <div className="listings-header">
         <div>
           <div className="listings-title">Properties</div>
-          <div className="listings-sub">{filtered.length} listing{filtered.length !== 1 ? "s" : ""}{cityFilter ? ` in ${cityFilter}` : " across Nigeria"}</div>
+          <div className="listings-sub">{subDetail}</div>
         </div>
-        {cityFilter && (
-          <button className="clear-filter" onClick={() => {}}>✕ {cityFilter}</button>
+        {summary.length > 0 && (
+          <button type="button" className="clear-filter" onClick={onClearFilters}>
+            ✕ Clear filters
+          </button>
         )}
       </div>
 

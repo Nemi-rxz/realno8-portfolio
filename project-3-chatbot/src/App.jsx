@@ -1,9 +1,10 @@
 import { useState } from "react";
 import ChatPanel from "./components/ChatPanel";
 import ListingsPanel from "./components/ListingsPanel";
+import { defaultFilters } from "./utils/chatFilters";
 
 export default function App() {
-  const [cityFilter, setCityFilter] = useState(null);
+  const [listingFilters, setListingFilters] = useState(() => ({ ...defaultFilters }));
 
   return (
     <div className="app">
@@ -17,8 +18,11 @@ export default function App() {
       </header>
 
       <main className="app-main">
-        <ChatPanel onFilter={setCityFilter} />
-        <ListingsPanel cityFilter={cityFilter} />
+        <ChatPanel onApplyFilters={setListingFilters} />
+        <ListingsPanel
+          filters={listingFilters}
+          onClearFilters={() => setListingFilters({ ...defaultFilters })}
+        />
       </main>
 
       <footer className="app-footer">

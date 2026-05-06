@@ -14,7 +14,8 @@ const listings = [
     sustainabilityScore: 82,
     sdg: { sdg6: 78, sdg7: 88, sdg11: 85, sdg13: 76 },
     features: ["Solar panels", "Borehole water", "24/7 security", "Gym", "Swimming pool"],
-    description: "Modern luxury apartment in the heart of Lekki with full solar backup and sustainable water systems.",
+    description:
+      "Modern luxury apartment in the heart of Lekki with full solar backup and sustainable water systems.",
     image: null,
   },
   {
@@ -32,7 +33,8 @@ const listings = [
     sustainabilityScore: 91,
     sdg: { sdg6: 92, sdg7: 95, sdg11: 90, sdg13: 88 },
     features: ["Solar + battery backup", "Rainwater harvesting", "Smart home system", "Garden", "BQ"],
-    description: "Premium executive villa in Maitama with industry-leading sustainability systems and smart home integration.",
+    description:
+      "Premium executive villa in Maitama with industry-leading sustainability systems and smart home integration.",
     image: null,
   },
   {
@@ -50,7 +52,8 @@ const listings = [
     sustainabilityScore: 74,
     sdg: { sdg6: 70, sdg7: 72, sdg11: 78, sdg13: 75 },
     features: ["Borehole", "Inverter backup", "Covered parking", "Security"],
-    description: "Spacious terrace in GRA Port Harcourt, great rental yield, close to oil industry offices.",
+    description:
+      "Spacious terrace in GRA Port Harcourt, great rental yield, close to oil industry offices.",
     image: null,
   },
   {
@@ -68,7 +71,8 @@ const listings = [
     sustainabilityScore: 79,
     sdg: { sdg6: 80, sdg7: 75, sdg11: 82, sdg13: 78 },
     features: ["Solar panels", "Borehole", "Boys quarters", "Garden", "2 car garage"],
-    description: "Classic detached duplex in one of Lagos's most established neighbourhoods with strong appreciation history.",
+    description:
+      "Classic detached duplex in one of Lagos's most established neighborhoods with strong appreciation history.",
     image: null,
   },
   {
@@ -86,7 +90,8 @@ const listings = [
     sustainabilityScore: 68,
     sdg: { sdg6: 65, sdg7: 70, sdg11: 72, sdg13: 63 },
     features: ["Open plan", "Central AC", "Fibre internet", "Car park", "Generator backup"],
-    description: "Prime commercial office space in Wuse 2, ideal for corporate tenants seeking a central Abuja address.",
+    description:
+      "Prime commercial office space in Wuse 2, ideal for corporate tenants seeking a central Abuja address.",
     image: null,
   },
   {
@@ -104,7 +109,8 @@ const listings = [
     sustainabilityScore: 95,
     sdg: { sdg6: 96, sdg7: 98, sdg11: 94, sdg13: 92 },
     features: ["Full solar grid", "Greywater recycling", "EV charging", "Rooftop terrace", "Concierge"],
-    description: "Ultra-premium waterfront penthouse in Ikoyi — the most sustainable luxury listing in our portfolio.",
+    description:
+      "Ultra-premium waterfront penthouse in Ikoyi - the most sustainable luxury listing in our portfolio.",
     image: null,
   },
   {
@@ -122,7 +128,7 @@ const listings = [
     sustainabilityScore: 71,
     sdg: { sdg6: 68, sdg7: 70, sdg11: 74, sdg13: 72 },
     features: ["Borehole", "Fruit garden", "Perimeter fence", "Security"],
-    description: "Affordable family bungalow in Enugu GRA — solid ROI and growing city appreciation.",
+    description: "Affordable family bungalow in Enugu GRA - solid ROI and growing city appreciation.",
     image: null,
   },
   {
@@ -140,7 +146,8 @@ const listings = [
     sustainabilityScore: 98,
     sdg: { sdg6: 99, sdg7: 99, sdg11: 97, sdg13: 96 },
     features: ["Full off-grid solar", "Smart home AI", "Private jetty", "Home theatre", "Staff quarters"],
-    description: "The pinnacle of sustainable luxury real estate in Nigeria — a fully off-grid smart home on Banana Island.",
+    description:
+      "The pinnacle of sustainable luxury real estate in Nigeria - a fully off-grid smart home on Banana Island.",
     image: null,
   },
 ];
